@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game - COMP2132</title>
+    <link rel="stylesheet" href="../Final_Project/css/Final_Project.css">
+    <script src="../Final_Project/js/Final_Project.js" defer></script> 
+</head>
+<body>
+
+    <main>
+        <div class="title-box">
+            COMP2132 “Hangman”
+        </div>
+
+        <section id="hangman">
+            <img src="../Final_Project/image/0.jpg" alt="Hangman" id="hangman-image">
+        </section>
+        <section id="word-hint">
+            <div id="word-display"></div>
+            <p>Hint: <span id="hint-text">a country</span></p>
+
+        </section>
+        <section id="game-info">
+            <p>Incorrect guesses: <span id="incorrect-guesses">0</span></p>
+        </section>
+        <section id="keyboard">
+            <div id="letter-buttons"></div>
+        </section>
+
+        <section id="keyboard2">
+            <p>Guess a letter from the mystery word... you have a limited number of chances to guess the entire word. The number of incorrect guesses will represent the number of times you miss. Survive the onslaught of the mad rhino.</p>
+        </section>
+    </main>
+
+    <div id="result-modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="result-image" src="../Final_Project/image/backgroud.jpg" alt="Game Result">
+            <p id="result-text">You win!</p>
+            <p id="guessed-word">Word was: </p>
+            <button id="play-again-btn">Play Again</button>
+        </div>
+    </div>
+
+</body>
+</html>
